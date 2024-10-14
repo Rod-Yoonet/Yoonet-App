@@ -1,0 +1,200 @@
+/*1~~~~~~~~~~~~~~~~~~Media Print~~~~~~~~~~~~~~~~~1*/
+
+
+
+@media print {
+
+    #yoonet_employee #dashboard_header {
+
+        display: none;
+
+    }
+
+
+
+    #yoonet_employee body {
+
+        visibility: hidden;
+
+        height: auto;
+
+    }
+
+
+
+    #yoonet_employee #view_offer, 
+
+    #yoonet_employee #view_contract, 
+
+    #yoonet_employee #incidentReport {
+
+        visibility: visible;
+
+        top: 0 !important;
+
+        page-break-inside: always;
+
+    }
+
+
+
+    #yoonet_employee #contract_buttons, 
+
+    #yoonet_employee #IR_buttons, 
+
+    #yoonet_employee #uploader {
+
+        display: none;
+
+    }
+
+
+
+    @page {
+
+        size: letter;
+
+        margin: 0.5in;
+
+        height: auto;
+
+    }
+
+}
+
+
+
+@media print {
+
+    #main_dashboard #dashboard_header {
+
+        display: none;
+
+    }
+
+
+
+    #main_dashboard body {
+
+        visibility: hidden;
+
+        height: auto !important;
+
+    }
+
+
+
+    #main_dashboard #view_offer, 
+
+    #main_dashboard #view_contract, 
+
+    #main_dashboard #incidentReport {
+
+        visibility: visible;
+
+        top: 0 !important;
+
+        page-break-inside: always;
+
+    }
+
+
+
+    #main_dashboard #contract_buttons, 
+
+    #main_dashboard #IR_buttons, 
+
+    #main_dashboard #uploader {
+
+        display: none;
+
+    }
+
+
+
+    #main_dashboard #uploaded {
+
+        display: grid;
+
+    }
+
+
+
+    @page {
+
+        size: letter;
+
+        margin: 0.5in;
+
+        height: auto !important;
+
+    }
+
+}
+
+
+
+
+
+#showoverflow {
+
+    overflow: visible !important;
+
+}
+
+
+
+
+
+#LeaveCounts{
+
+    overflow-x: scroll !important;
+
+}
+
+
+
+/*~~~~~~~~~~~~~~~~Scroll Bar~~~~~~~~~~~~~~~~~~*/
+
+
+
+*::-webkit-scrollbar{
+
+    width: 5px;
+
+    height: 10px;
+
+    display: block;
+
+}
+
+
+
+*::-webkit-scrollbar-track {
+
+    background: #f1f1f1;
+
+    height: 5px;
+
+}
+
+
+
+*::-webkit-scrollbar-thumb
+
+ {
+
+    background: #8A9EFF;
+
+    border-radius: 5px;
+
+}
+
+
+
+*::-webkit-scrollbar-thumb:hover {
+
+    background: #6881FF;
+
+}
+
